@@ -1,0 +1,6 @@
+In a major version upgrade of the Sentry gem they removed out-of-the-box
+support for sanitizing fields client-side.
+
+The files contained in this directory were downloaded from the Raven gem (except for custom_sanitize_data.rb)
+https://github.com/getsentry/sentry-ruby/tree/82e1ffe711af287ddc23e8517bdb8275beff94d5/sentry-raven/lib/raven/processor
+
