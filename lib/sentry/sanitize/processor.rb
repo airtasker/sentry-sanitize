@@ -1,15 +1,17 @@
-module Raven
-  class Processor
-    STRING_MASK = '********'.freeze
-    INT_MASK = 0
-    REGEX_SPECIAL_CHARACTERS = %w(. $ ^ { [ ( | ) * + ?).freeze
+module Sentry
+  module Sanitize
+    class Processor
+      STRING_MASK = '********'.freeze
+      INT_MASK = 0
+      REGEX_SPECIAL_CHARACTERS = %w(. $ ^ { [ ( | ) * + ?).freeze
 
-    def initialize(client = nil)
-      @client = client
-    end
+      def initialize(client = nil)
+        @client = client
+      end
 
-    def process(_data)
-      raise NotImplementedError
+      def process(_data)
+        raise NotImplementedError
+      end
     end
   end
 end
